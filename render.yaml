@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: captcha-api
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn api:app
-    healthCheckPath: /
-    autoDeploy: true
